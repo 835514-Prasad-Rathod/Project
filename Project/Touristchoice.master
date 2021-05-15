@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Touristchoice.master.cs" Inherits="Touristchoice" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+    <style type="text/css">
+        .auto-style1 {
+            width: 1329px;
+            height: 298px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="height: 324px; margin-right: 0px; background-color: #00FFFF; width: 1333px;">
+        <img alt="" class="auto-style1" src="Photos/IMG_20190224_120715.jpg" /><br />
+        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Homepage.aspx" Text="Home" Value="New Item"></asp:MenuItem>
+                <asp:MenuItem Text="Admin Login" Value="New Item" NavigateUrl="~/Admilogi.aspx"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/userlogi.aspx" Text="Tourist Login" Value="New Item"></asp:MenuItem>
+                <asp:MenuItem Text="About Us" Value="New Item"></asp:MenuItem>
+            </Items>
+            <StaticMenuItemStyle Width="245px" />
+        </asp:Menu>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            <p style="width: 580px; height: 193px">
+                <br />
+&nbsp;&nbsp;&nbsp;
+            </p>
+            <p>
+            </p>
+            <p style="height: 14px; width: 974px">
+            </p>
+            <p>
+            </p>
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
